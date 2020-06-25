@@ -14,5 +14,5 @@ jobs:
       - name: Upload math result for job 1
         uses: actions/upload-artifact@v1
         with:
-          name: artifacts/test_ghaction
+          name: artifacts__test_ghaction
           path: release.tgz

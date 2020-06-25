@@ -14,7 +14,7 @@ jobs:
       - name: Download math result for job 2
         uses: actions/download-artifact@v1
         with:
-          name: artifacts/test_ghaction_tgz
+          name: artifacts__test_ghaction_tgz
           path: artifacts/
       - name: Upload Release Asset
         id: upload-release-asset
