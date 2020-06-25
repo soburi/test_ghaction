@@ -20,7 +20,7 @@ jobs:
         with:
           name: artifacts__test_ghaction_tgz
           path: release.tar.gz
-  build:
+  release:
     name: release
       - name: Download math result for job 2
         uses: actions/download-artifact@v1
