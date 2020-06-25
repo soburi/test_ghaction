@@ -15,4 +15,4 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: artifacts__test_ghaction
-          path: release.tgz
+          path: release.tar.gz
