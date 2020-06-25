@@ -11,6 +11,17 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Run make
+        run: make release
+      - name: Upload math result for job 1
+        uses: actions/upload-artifact@v1
+        with:
+          name: artifacts__test_ghaction_tgz
+          path: release.tar.gz
+  build:
+    name: release
       - name: Download math result for job 2
         uses: actions/download-artifact@v1
         with:
@@ -26,4 +37,3 @@ jobs:
           asset_path: artifacts/release.tar.gz
           asset_name: test_ghaction.tgz
           asset_content_type: application/tgz
-
