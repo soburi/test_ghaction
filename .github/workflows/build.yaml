@@ -10,7 +10,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: Run make
-        run: make
+        run: make release
       - name: Upload math result for job 1
         uses: actions/upload-artifact@v1
         with:
