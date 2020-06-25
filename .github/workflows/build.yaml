@@ -1,0 +1,12 @@
+name: build
+on: [push]
+
+jobs:
+  build:
+    name: build
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run make
+        run: make
+
