@@ -1,3 +1,4 @@
-FROM gcc as buildenv
+FROM gcc
 COPY . /usr/src
 WORKDIR /usr/src
+RUN ./run.sh
