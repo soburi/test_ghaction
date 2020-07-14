@@ -10,4 +10,4 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - release.tar.gz
+    - $CODEBUILD_SRC_DIR/release.tar.gz
