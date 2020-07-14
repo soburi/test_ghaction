@@ -5,3 +5,9 @@ steps:
   args: [ 'push', 'gcr.io/$PROJECT_ID/gcc' ]
 images:
 - 'gcr.io/$PROJECT_ID/gcc'
+
+artifacts:
+  objects:
+  location: gs://myartifact
+  paths: release.tar.gz
+
