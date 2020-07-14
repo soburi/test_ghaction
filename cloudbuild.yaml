@@ -8,6 +8,6 @@ images:
 
 artifacts:
   objects:
-  location: 'gs://myartifact'
-  paths: [ 'release.tar.gz' ]
+    location: 'gs://myartifact/'
+    paths: [ 'release.tar.gz' ]
 
